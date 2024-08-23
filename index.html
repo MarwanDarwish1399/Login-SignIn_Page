@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Login/SignIn Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <div id="btn"></div>
+            <button type="button" class="Login" onclick="showLogin()">Login</button>
+            <button type="button" class="sign" onclick="showRegister()">Register</button>
+        </div>
+       
+        <div id="login" class="login active">
+            <div class="username">
+                <input class="user" type="text" placeholder="username" required/>
+            </div>
+            <div class="password">
+                <input class="pass" type="password" placeholder="password" required/>
+            </div>
+            <div class="rem">
+                <label>
+                    <input type="checkbox"/>Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="Log">
+                <button class="l">Login</button>
+            </div>
+        </div>
+
+        <div id="register" class="register">
+            <div class="inputs">
+                <input class="fn" type="text" placeholder="First Name" required/>
+                <input class="ln" type="text" placeholder="Last Name" required/>
+                <input class="email" type="email" placeholder="Email" required/>
+                <input class="fpass" type="password" placeholder="Password" required/>
+                <input class="cpass" type="password" placeholder="Confirm Password" required/>
+            </div>
+            <label class="conditions">
+                <input type="checkbox"/>I agree to the terms and conditions
+            </label>
+            <button class="r">Register</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
